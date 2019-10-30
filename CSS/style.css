@@ -159,9 +159,15 @@ body {
 }
 
 .modal-img {
-    width: 100%;
+    width: 200px;   
     height: auto;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 .modal-text {
     font-family: Staatliches, cursive;
+}
+
+.modal-content {
+    background-color: #F8F9FA;
 }
