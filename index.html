@@ -18,19 +18,41 @@
     <!-- Place your stylesheet here-->
     <link href="CSS/animate.css" rel="stylesheet">
     <link rel="stylesheet" href="CSS/style.css">
+
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Staatliches&display=swap" rel="stylesheet">
     <link href='https://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet' type='text/css'>
-    <script src="https://kit.fontawesome.com/eb31f317ec.js" crossorigin="anonymous"></script>
-    <script type="text/javascript" src="https://cdn.chec.io/v1/commerce.js"></script>
-    <script>
-        var myStore = new Commerce('pk_1701084500e10260c5d1dbcd3ec6e6cc639076ee185ef', true);
-    </script>
+    <link rel="stylesheet" href="https://cdn.snipcart.com/themes/v3.0.1/default/snipcart.css" />
 </head>
 
 <body>
+    <!-- Modal -->
+    <div id="myModal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
 
-    <nav class="site-header sticky-top py-1">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button class="btn btn-dark" type="close" data-dismiss="modal">&times;</button>
+                    <h2 class="modal-text" style="text-align: center;">Djosty's App!</h2>
+                </div>
+                <div class="modal-body">
+                    <img class="modal-img" src="Media/stappen.png">
+                    <img class="modal-img" src="Media/stappen.png">
+                    <img class="modal-img" src="Media/stappen.png">
+                    <img class="modal-img" src="Media/stappen.png">
+                    
+                    
+
+                </div>
+                <!--<div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>-->
+            </div>
+
+        </div>
+    </div>
+    <nav id="nav1" class="site-header  sticky-top py-1">
         <div class="container d-flex flex-column flex-md-row justify-content-between">
             <a class="py-2" href="#">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="d-block mx-auto" role="img" viewBox="0 0 24 24" focusable="true">
@@ -40,6 +62,7 @@
                 </svg>
 
             </a>
+            <span class="navbar-toggler-icon"></span>
             <a class="py-2 d-none d-md-inline-block" href="#pagetitle">Home</a>
             <a class="py-2 d-none d-md-inline-block" href="#">Link #2</a>
             <a class="py-2 d-none d-md-inline-block" href="#">Link #3</a>
@@ -47,20 +70,24 @@
             <a class="py-2 d-none d-md-inline-block" href="#">Link #5</a>
             <a class="py-2 d-none d-md-inline-block" href="#">Link #6</a>
             <a class="py-2 d-none d-md-inline-block" href="#contact">Contact</a>
+            <a class="py-2 d-none d-md-inline-block snipcart-checkout text-light" href="#"><i class="fas fa-shopping-cart"></i> Afrekenen</a>
         </div>
     </nav>
+    <div hidden id="snipcart" data-api-key="NTUzZWE0ZGUtNGNlYS00ODVjLWE5OTAtMTNhY2Y4Mjc4ZjM5NjM3MDc5NzA4MzIxMzc5MDU3"></div>
 
-    <div id="pagetitle" class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-light animated flash">
+
+
+    <div id="pagetitle" class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-light animated">
         <div class="wrap animated bounceIn delay-05s col-md-5 p-lg-5 mx-auto my-5">
             <h1 class="display-4 font-weight-normal product-text text-shadow">Pakkende titel!</h1>
             <p class="lead font-weight-normal ">Samen met een goede tekst is dit de eye-catcher van je website.</p>
-            <a class="btn product-btn-large btn-outline-secondary" href="https://wa.me/31619634098">Contact opnemen!</a>
+            <a class="btn product-btn-large btn-outline-secondary" target="_blank" href="https://wa.me/31619634098">Contact opnemen!</a>
         </div>
-        <div class="product-device shadow-sm d-none d-md-block"></div>
+        <div class="product-device shadow-sm d-none d-md-block animated flash"></div>
 
-        <div class="product-device product-device-2 shadow-sm d-none d-md-block"></div>
+        <div class="product-device product-device-2 shadow-sm d-none d-md-block animated flash delay-05s"></div>
     </div>
-    <div class="position-relative overflow-hidden p-6 p-md-10 m-md-4 text-center bg-light">
+    <div class="shadow position-relative overflow-hidden p-6 p-md-10 m-md-4 text-center bg-light">
         <div class="bg-dark mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center text-light overflow-hidden">
             <div class="my-3 py-3">
                 <h2 class="display-5 text-flowchart">Hoe werkt het allemaal?</h2>
@@ -74,18 +101,19 @@
             </div>
         </div>
 
+
         <div class="d-md-flex flex-md-equal w-100 my-md-3 pl-md-3 animated fast fadeInUp delay-05s">
             <div class="bg-dark mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center text-light overflow-hidden">
                 <div class="my-3 py-3">
                     <h2 class="display-5"><i class="fas fa-medal"></i> Onze best-sellers</h2>
                     <p class="lead">Deze gaan als hete broodjes over de toonbank.</p>
                 </div>
-                
+
                 <div class="bg-light text-dark shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;">
                     <a target="_blank" href="http://www.google.com" class="text-dark">
-                    <h2 class="product-text shadow">Grolsch</h2>
-                    <br>
-                    <img class="product-img" src="Media/Beer-Bottle-Png-715x715.png">
+                        <h2 class="product-text shadow">Grolsch</h2>
+                        <br>
+                        <img class="product-img" src="Media/Beer-Bottle-Png-715x715.png">
                     </a>
                 </div>
             </div>
@@ -95,7 +123,10 @@
                     <p class="lead">Onze werknemers drinken deze dranken het liefst.</p>
                 </div>
                 <div class="bg-dark text-light shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;">
-                    <h2 class="product-text shadow">Bacardi</h2>
+                    <h2 class="product-text shadow">Absolut Vodka</h2>
+                    <a href="#" target="_self" class="navbar-collapse btn btn-small bg-light buttontext buttonoffset snipcart-add-item" data-item-id="Bacardi-500cl" data-item-price="29.99" data-item-url="/drank/bacardi-50cl" data-item-description="Bacardi Carta Blanca is een aromatische witte rum met onderscheidende smaken van amandel en vanille, ontwikkeld in wit eikenhouten vaten en gevormd door een geheime mix van houtskool voor de kenmerkende zachtheid." data-item-image="/media/bacardi-carta-blanca.png" data-item-name="Bacardi Carta Blanca" data-item-custom1-name="Hoeveelheid" data-item-custom1-options="1L|2.5L[+100.00]|5L[+300.00]">
+                        Aan winkelmandje toevoegen
+                    </a>
                     <br>
                     <img class="product-img" src="Media/157234253745743601.png">
                 </div>
@@ -138,10 +169,10 @@
                 <div class="bg-light text-dark shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;">
                     <a href="#" class="text-dark">
 
-                    <h2 class="product-text shadow">Hertog-Jan</h2>
-                    <br>
-                    <img class="product-img" src="Media/Beer-Bottle-Png-715x715.png">
-                        </a>
+                        <h2 class="product-text shadow">Hertog-Jan</h2>
+                        <br>
+                        <img class="product-img" src="Media/Beer-Bottle-Png-715x715.png">
+                    </a>
                 </div>
             </div>
             <div class="bg-light mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
@@ -214,16 +245,49 @@
                 </div>
             </div>
         </footer>
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-        <script>
-            window.jQuery || document.write('<script src="/docs/4.3/assets/js/vendor/jquery-slim.min.js"><\/script>')
+
+        <script type="application/javascript">
+            window.tiledeskSettings = {
+                projectid: "5db98569d4f296001732672a"
+            };
+            (function(d, s, id) {
+                var js, fjs = d.getElementsByTagName(s)[0];
+                if (d.getElementById(id)) return;
+                js = d.createElement(s);
+                js.id = id; //js.async=!0;
+                js.src = "https://widget.tiledesk.com/v3/launch.js";
+                fjs.parentNode.insertBefore(js, fjs);
+            }(document, 'script', 'tiledesk-jssdk'));
+
         </script>
+        <script src="https://kit.fontawesome.com/eb31f317ec.js" crossorigin="anonymous"></script>
+        <script src="https://cdn.snipcart.com/themes/v3.0.1/default/snipcart.js"></script>
         <script src="/docs/4.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-xrRywqdh3PHs8keKZN+8zzc5TX0GRTLCcmivcbNJWm2rs5C8PRhcEn3czEjhAO9o" crossorigin="anonymous"></script>
 
         <!-- Placed at the end of the document so the pages load faster -->
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <!-- modal load -->
+        <script>
+            // A $( document ).ready() block.
+            $(document).ready(function() {
+                if (document.cookie.indexOf('visited=true') == -1) {
+                    // load the overlay
+                    $('#myModal').modal({
+                        show: true
+                    });
+
+                    var year = 1000 * 60 * 60 * 24 * 365;
+                    var expires = new Date((new Date()).valueOf() + year);
+                    document.cookie = "visited=true;expires=" + expires.toUTCString();
+
+                }
+            });
+
+        </script>
 
     </div>
-</body></html>
+</body>
+
+</html>
